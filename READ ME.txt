@@ -1,0 +1,33 @@
+Technology used: 
+- .Net Core Web API(.Net core 3.1)
+- EF Core (Code First Migration approach)
+
+Tools:
+- VisualStudio 2019
+- SQL Server Management Studio 2012
+- Postman
+
+
+Project Setup:
+- Change Database Connection string to your sql server instance.
+- Run Update-Database from the Visual Studio Package Manager Console to create the database.
+
+Endpoints and parameters:
+
+
+Account:
+	https://localhost:44362/api/Account/CreateAccount (POST)
+	Sample Payload:
+	{
+  	  "Username" : "John Doe",
+          "InitialBalance": 50
+        }	
+
+Transaction:
+	https://localhost:44362/api/Transaction/TransferMoney (POST)
+	Sample Payload:
+	{
+    	  "SourceAccountId" : 1,
+    	  "DestinationAccountId": 2,
+   	  "TransferAmount": 51
+	}
