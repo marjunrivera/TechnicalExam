@@ -8,7 +8,7 @@ namespace TechnicalExam.Repository.Repository.Interface
 {
     public interface ITransactionRepository
     {
-        Task<IEnumerable<Transactions>> GetTransactions();
+        Task<List<Transactions>> GetTransactions();
         Task<Transactions> GetTransaction(int transactionId);
         Task<string> AddTransaction(Transactions transaction);
     }

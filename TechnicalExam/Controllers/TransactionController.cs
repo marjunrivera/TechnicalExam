@@ -26,5 +26,13 @@ namespace TechnicalExam.Controllers
 
             return Ok(response);
         }
+
+        [HttpGet("GetTransactions")]
+        public async Task<IActionResult> GetT()
+        {
+            var response = await _transactionServices.GetTransactions();
+
+            return Ok(response);
+        }
     }
 }

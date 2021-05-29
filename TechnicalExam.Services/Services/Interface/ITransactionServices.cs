@@ -8,6 +8,7 @@ namespace TechnicalExam.Services.Services.Interface
 {
     public interface ITransactionServices
     {
-        Task<string> TransferMoney(TransactionsModel transactionModel);
+        Task<ResponseMessage> TransferMoney(TransactionsModel transactionModel);
+        Task<List<TransactionsModel>> GetTransactions();
     }
 }

@@ -19,18 +19,51 @@ namespace TechnicalExam.Services.Services
             _transactionRepository = transactionRepository;
             _accountRepository = accountRepository;
         }
-        public async Task<string> TransferMoney(TransactionsModel transactionModel)
+        public async Task<ResponseMessage> TransferMoney(TransactionsModel transactionModel)
         {
-            Transactions transaction = new Transactions
+            try
             {
-                SourceAccountId = transactionModel.SourceAccountId,
-                DestinationAccountId = transactionModel.DestinationAccountId,
-                TransferAmount = transactionModel.TransferAmount
-            };
+                Transactions transaction = new Transactions
+                {
+                    SourceAccountId = transactionModel.SourceAccountId,
+                    DestinationAccountId = transactionModel.DestinationAccountId,
+                    TransferAmount = transactionModel.TransferAmount
+                };
 
-            var transactionResult = await _transactionRepository.AddTransaction(transaction);
-            
-            return transactionResult;
+                var transactionResult = await _transactionRepository.AddTransaction(transaction);
+
+                return new ResponseMessage { result = transactionResult , message = "Transaction Successful!"};
+            }
+            catch (Exception ex)
+            {
+                return new ResponseMessage { result = null, isError = true, message = ex.Message };
+            }
         }
+        public async Task<List<TransactionsModel>> GetTransactions()
+        {
+            var response = await _transactionRepository.GetTransactions();
+
+            if (response != null)
+            {
+                List<TransactionsModel> transactions = new List<TransactionsModel>();
+
+                response.ForEach(x => {
+                    transactions.Add(new TransactionsModel
+                    {
+                        Id = x.Id,
+                        SourceAccountId = x.SourceAccountId,
+                        DestinationAccountId = x.DestinationAccountId,
+                        TransferAmount = x.TransferAmount
+                    });
+                });
+
+                return transactions;
+            }
+            else
+            {
+                return new List<TransactionsModel>();
+            }
+        }
+
     }
 }

@@ -29,5 +29,13 @@ namespace TechnicalExam.Controllers
 
             return Ok(result);
         }
+
+        [HttpGet("GetAccounts")]
+        public async Task<IActionResult> GetAccounts()
+        {
+            var result = await _accountServices.GetAccounts();
+
+            return Ok(result);
+        }
     }
 }

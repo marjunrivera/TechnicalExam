@@ -10,3 +10,15 @@ C:\Users\Marjun\source\repos\TechnicalExam\TechnicalExam.Services\obj\Debug\netc
 C:\Users\Marjun\source\repos\TechnicalExam\TechnicalExam.Services\obj\Debug\netcoreapp3.1\TechnicalExam.Services.csproj.CopyComplete
 C:\Users\Marjun\source\repos\TechnicalExam\TechnicalExam.Services\obj\Debug\netcoreapp3.1\TechnicalExam.Services.dll
 C:\Users\Marjun\source\repos\TechnicalExam\TechnicalExam.Services\obj\Debug\netcoreapp3.1\TechnicalExam.Services.pdb
+C:\repos\TechnicalExam\TechnicalExam.Services\bin\Debug\netcoreapp3.1\TechnicalExam.Services.deps.json
+C:\repos\TechnicalExam\TechnicalExam.Services\bin\Debug\netcoreapp3.1\TechnicalExam.Services.dll
+C:\repos\TechnicalExam\TechnicalExam.Services\bin\Debug\netcoreapp3.1\TechnicalExam.Services.pdb
+C:\repos\TechnicalExam\TechnicalExam.Services\bin\Debug\netcoreapp3.1\TechnicalExam.Repository.dll
+C:\repos\TechnicalExam\TechnicalExam.Services\bin\Debug\netcoreapp3.1\TechnicalExam.Repository.pdb
+C:\repos\TechnicalExam\TechnicalExam.Services\obj\Debug\netcoreapp3.1\TechnicalExam.Services.csprojAssemblyReference.cache
+C:\repos\TechnicalExam\TechnicalExam.Services\obj\Debug\netcoreapp3.1\TechnicalExam.Services.AssemblyInfoInputs.cache
+C:\repos\TechnicalExam\TechnicalExam.Services\obj\Debug\netcoreapp3.1\TechnicalExam.Services.AssemblyInfo.cs
+C:\repos\TechnicalExam\TechnicalExam.Services\obj\Debug\netcoreapp3.1\TechnicalExam.Services.csproj.CoreCompileInputs.cache
+C:\repos\TechnicalExam\TechnicalExam.Services\obj\Debug\netcoreapp3.1\TechnicalExam.Services.csproj.CopyComplete
+C:\repos\TechnicalExam\TechnicalExam.Services\obj\Debug\netcoreapp3.1\TechnicalExam.Services.dll
+C:\repos\TechnicalExam\TechnicalExam.Services\obj\Debug\netcoreapp3.1\TechnicalExam.Services.pdb

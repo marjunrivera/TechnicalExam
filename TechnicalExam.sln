@@ -12,6 +12,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TechnicalExam.Repository", 
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TechnicalExam.Services", "TechnicalExam.Services\TechnicalExam.Services.csproj", "{C9F389B7-DA0B-4856-882B-4CD2F5E6A1B4}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TechnicalExamClient", "TechnicalExamClient\TechnicalExamClient.csproj", "{2B8EE360-9EE6-4EC4-B4F8-2BAFC5370747}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -30,6 +32,10 @@ Global
 		{C9F389B7-DA0B-4856-882B-4CD2F5E6A1B4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C9F389B7-DA0B-4856-882B-4CD2F5E6A1B4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C9F389B7-DA0B-4856-882B-4CD2F5E6A1B4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2B8EE360-9EE6-4EC4-B4F8-2BAFC5370747}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2B8EE360-9EE6-4EC4-B4F8-2BAFC5370747}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2B8EE360-9EE6-4EC4-B4F8-2BAFC5370747}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2B8EE360-9EE6-4EC4-B4F8-2BAFC5370747}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

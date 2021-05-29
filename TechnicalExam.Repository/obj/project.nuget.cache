@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "td40/K2OafSj1USoZQAeyrvSbhPimojbvc9ubcoPBGopp7A+RhsT+coG1UMvO1uHGf7+44lNF6GTAROtX6WEcw==",
+  "dgSpecHash": "Vb7V9V6H7vNapLz77KkM30hzsBR/yJ7y/O/FMWDOhqXDbzWY1fIBpJSJwdX215NXCe7RYEz/tTkqagsqr6sGMg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Marjun\\source\\repos\\TechnicalExam\\TechnicalExam.Repository\\TechnicalExam.Repository.csproj",
+  "projectFilePath": "C:\\repos\\TechnicalExam\\TechnicalExam.Repository\\TechnicalExam.Repository.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Marjun\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\Marjun\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",

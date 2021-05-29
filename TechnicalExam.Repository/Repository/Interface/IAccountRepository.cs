@@ -8,7 +8,7 @@ namespace TechnicalExam.Repository.Repository.Interface
 {
     public interface IAccountRepository
     {
-        Task<IEnumerable<Accounts>> GetAccounts();
+        Task<List<Accounts>> GetAccounts();
         Task<Accounts> GetAccount(int accountId);
         Task<string> AddAccount(Accounts account);
         Task<Accounts> GetAccountByUsername(string username);

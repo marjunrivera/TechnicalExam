@@ -1,0 +1,48 @@
+﻿@model TechnicalExam.Services.Models.TransactionsModel
+
+@{
+    ViewData["Title"] = "Transfer Money";
+}
+
+<h1>Transfer Money</h1>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="SourceAccountId" class="control-label"></label>
+                <input asp-for="SourceAccountId" class="form-control" />
+                <span asp-validation-for="SourceAccountId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="DestinationAccountId" class="control-label"></label>
+                <input asp-for="DestinationAccountId" class="form-control" />
+                <span asp-validation-for="DestinationAccountId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="TransferAmount" class="control-label"></label>
+                <input asp-for="TransferAmount" class="form-control" />
+                <span asp-validation-for="TransferAmount" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" name="Create" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+        @if (!string.IsNullOrEmpty(ViewBag.Message)) { 
+            <script type="text/javascript">
+                window.onload = function () {
+                    alert("@ViewBag.Message")
+                }
+            </script>
+        }
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

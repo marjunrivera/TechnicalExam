@@ -5768,11 +5768,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Marjun\\source\\repos\\TechnicalExam\\TechnicalExam.Repository\\TechnicalExam.Repository.csproj",
+      "projectUniqueName": "C:\\repos\\TechnicalExam\\TechnicalExam.Repository\\TechnicalExam.Repository.csproj",
       "projectName": "TechnicalExam.Repository",
-      "projectPath": "C:\\Users\\Marjun\\source\\repos\\TechnicalExam\\TechnicalExam.Repository\\TechnicalExam.Repository.csproj",
+      "projectPath": "C:\\repos\\TechnicalExam\\TechnicalExam.Repository\\TechnicalExam.Repository.csproj",
       "packagesPath": "C:\\Users\\Marjun\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Marjun\\source\\repos\\TechnicalExam\\TechnicalExam.Repository\\obj\\",
+      "outputPath": "C:\\repos\\TechnicalExam\\TechnicalExam.Repository\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Marjun\\AppData\\Roaming\\NuGet\\NuGet.Config",

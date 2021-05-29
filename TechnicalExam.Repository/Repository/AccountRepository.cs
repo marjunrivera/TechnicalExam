@@ -1,4 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.Data.SqlClient;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -18,7 +19,7 @@ namespace TechnicalExam.Repository.Repository
             _dbContext = dbContext;
         }
 
-        public async Task<IEnumerable<Accounts>> GetAccounts()
+        public async Task<List<Accounts>> GetAccounts()
         {
             return await _dbContext.Accounts.ToListAsync();
         }

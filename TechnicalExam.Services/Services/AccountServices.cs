@@ -19,7 +19,7 @@ namespace TechnicalExam.Services.Services
         {
             _accountRepository = accountRepository;
         }
-        public async Task<string> CreateAccount(AccountsModel request)
+        public async Task<ResponseMessage> CreateAccount(AccountsModel request)
         {
             string response = string.Empty;
 
@@ -42,11 +42,11 @@ namespace TechnicalExam.Services.Services
                     throw new Exception("Username already exist.");
                 }
 
-                return response;
+                return new ResponseMessage { result = response , message = "User creation successful!"};
             }
             catch (Exception ex)
             {
-                return ex.Message;
+                return new ResponseMessage { result = null, isError = true, message = ex.Message };
             }
         }
 
@@ -80,6 +80,31 @@ namespace TechnicalExam.Services.Services
             else
             {
                 return new AccountsModel();
+            }
+        }
+
+        public async Task<List<AccountsModel>> GetAccounts()
+        {
+            var response = await _accountRepository.GetAccounts();
+
+            if (response != null)
+            {
+                List<AccountsModel> accountList = new List<AccountsModel>();
+
+                response.ForEach(x => {
+                    accountList.Add(new AccountsModel
+                    {
+                        Id = x.Id,
+                        Username = x.Username,
+                        InitialBalance = x.InitialBalance
+                    });
+                });
+
+                return accountList;
+            }
+            else
+            {
+                return new List<AccountsModel>();
             }
         }
     }

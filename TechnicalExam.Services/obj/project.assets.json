@@ -5755,11 +5755,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Marjun\\source\\repos\\TechnicalExam\\TechnicalExam.Services\\TechnicalExam.Services.csproj",
+      "projectUniqueName": "C:\\repos\\TechnicalExam\\TechnicalExam.Services\\TechnicalExam.Services.csproj",
       "projectName": "TechnicalExam.Services",
-      "projectPath": "C:\\Users\\Marjun\\source\\repos\\TechnicalExam\\TechnicalExam.Services\\TechnicalExam.Services.csproj",
+      "projectPath": "C:\\repos\\TechnicalExam\\TechnicalExam.Services\\TechnicalExam.Services.csproj",
       "packagesPath": "C:\\Users\\Marjun\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Marjun\\source\\repos\\TechnicalExam\\TechnicalExam.Services\\obj\\",
+      "outputPath": "C:\\repos\\TechnicalExam\\TechnicalExam.Services\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Marjun\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -5776,8 +5776,8 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "projectReferences": {
-            "C:\\Users\\Marjun\\source\\repos\\TechnicalExam\\TechnicalExam.Repository\\TechnicalExam.Repository.csproj": {
-              "projectPath": "C:\\Users\\Marjun\\source\\repos\\TechnicalExam\\TechnicalExam.Repository\\TechnicalExam.Repository.csproj"
+            "C:\\repos\\TechnicalExam\\TechnicalExam.Repository\\TechnicalExam.Repository.csproj": {
+              "projectPath": "C:\\repos\\TechnicalExam\\TechnicalExam.Repository\\TechnicalExam.Repository.csproj"
             }
           }
         }

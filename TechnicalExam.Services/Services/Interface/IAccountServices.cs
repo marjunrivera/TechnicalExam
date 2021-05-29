@@ -8,8 +8,10 @@ namespace TechnicalExam.Services.Services.Interface
 {
     public interface IAccountServices
     {
-        Task<string> CreateAccount(AccountsModel account);
+        Task<ResponseMessage> CreateAccount(AccountsModel account);
 
         Task<AccountsModel> GetAccountById(int account);
+
+        Task<List<AccountsModel>> GetAccounts();
     }
 }

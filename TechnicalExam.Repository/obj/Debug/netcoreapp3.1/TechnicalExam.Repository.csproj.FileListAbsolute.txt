@@ -19,3 +19,15 @@ C:\Users\Marjun\source\repos\TechnicalExam\TechnicalExam.Repository\obj\Debug\ne
 C:\Users\Marjun\source\repos\TechnicalExam\TechnicalExam.Repository\obj\Debug\netcoreapp3.1\TechnicalExam.Repository.dll
 C:\Users\Marjun\source\repos\TechnicalExam\TechnicalExam.Repository\obj\Debug\netcoreapp3.1\TechnicalExam.Repository.pdb
 C:\Users\Marjun\source\repos\TechnicalExam\TechnicalExam.Repository\obj\Debug\netcoreapp3.1\TechnicalExam.Repository.genruntimeconfig.cache
+C:\repos\TechnicalExam\TechnicalExam.Repository\bin\Debug\netcoreapp3.1\TechnicalExam.Repository.deps.json
+C:\repos\TechnicalExam\TechnicalExam.Repository\bin\Debug\netcoreapp3.1\TechnicalExam.Repository.runtimeconfig.json
+C:\repos\TechnicalExam\TechnicalExam.Repository\bin\Debug\netcoreapp3.1\TechnicalExam.Repository.runtimeconfig.dev.json
+C:\repos\TechnicalExam\TechnicalExam.Repository\bin\Debug\netcoreapp3.1\TechnicalExam.Repository.dll
+C:\repos\TechnicalExam\TechnicalExam.Repository\bin\Debug\netcoreapp3.1\TechnicalExam.Repository.pdb
+C:\repos\TechnicalExam\TechnicalExam.Repository\obj\Debug\netcoreapp3.1\TechnicalExam.Repository.csprojAssemblyReference.cache
+C:\repos\TechnicalExam\TechnicalExam.Repository\obj\Debug\netcoreapp3.1\TechnicalExam.Repository.AssemblyInfoInputs.cache
+C:\repos\TechnicalExam\TechnicalExam.Repository\obj\Debug\netcoreapp3.1\TechnicalExam.Repository.AssemblyInfo.cs
+C:\repos\TechnicalExam\TechnicalExam.Repository\obj\Debug\netcoreapp3.1\TechnicalExam.Repository.csproj.CoreCompileInputs.cache
+C:\repos\TechnicalExam\TechnicalExam.Repository\obj\Debug\netcoreapp3.1\TechnicalExam.Repository.dll
+C:\repos\TechnicalExam\TechnicalExam.Repository\obj\Debug\netcoreapp3.1\TechnicalExam.Repository.pdb
+C:\repos\TechnicalExam\TechnicalExam.Repository\obj\Debug\netcoreapp3.1\TechnicalExam.Repository.genruntimeconfig.cache

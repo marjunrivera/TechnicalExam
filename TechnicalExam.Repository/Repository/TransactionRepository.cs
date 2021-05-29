@@ -19,7 +19,7 @@ namespace TechnicalExam.Repository.Repository
             _dbContext = dbContext;
         }
 
-        public async Task<IEnumerable<Transactions>> GetTransactions()
+        public async Task<List<Transactions>> GetTransactions()
         {
             return await _dbContext.Transactions.ToListAsync();
         }
@@ -54,7 +54,7 @@ namespace TechnicalExam.Repository.Repository
                     //validating amounts source and destination
                     if (sourceAccount.InitialBalance < 0)
                     {
-                        throw new Exception($"Transaction failed: Insuffucient Balance for Account '{sourceAccount.Username}'." +
+                        throw new Exception($"Transaction failed: Insuffucient Balance for Account {sourceAccount.Username}. " +
                             $"Account balance cannot be lower than 0.");
                     }
 
@@ -68,7 +68,7 @@ namespace TechnicalExam.Repository.Repository
                     var dbEntry = inEntry.GetDatabaseValues();
 
                     if (dbEntry == null)
-                        return "Transaction failed: Account was deleted by another user.";
+                        throw new Exception("Transaction failed: Account was deleted by another user.");
 
 
                     var inModel = inEntry.OriginalValues.ToObject() as Accounts;
@@ -77,21 +77,22 @@ namespace TechnicalExam.Repository.Repository
                     var conflicts = string.Empty;
 
                     if (inModel.InitialBalance != dbModel.InitialBalance)
-                        conflicts = ($"Transaction failed: Initial Balance for account named '{inModel.Username}'" +
-                            $"is update by another transaction from '{inModel.InitialBalance}' to '{dbModel.InitialBalance}'." +
+                        conflicts = ($"Transaction failed: Initial Balance for account named {inModel.Username} " +
+                            $"is update by another transaction from {inModel.InitialBalance} to {dbModel.InitialBalance}. " +
                             $"Please try again.");
 
                     await context.RollbackAsync();
-                    return conflicts;
+                    throw new Exception(conflicts);
                 }
                 catch (Exception ex)
                 {
                     await context.RollbackAsync();
-                    return ex.Message;
+                    throw ex;
                 }
             }
 
             return transactionId.ToString();
         }
+
     }
 }

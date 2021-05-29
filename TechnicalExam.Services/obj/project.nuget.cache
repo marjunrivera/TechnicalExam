@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "UcUA1xknh01x6LrK3eVIF0G8hN6h0iPgyohnCfvwiDh6CFP502oKzsPbyHoH5y2/mUsSBTehm+ywmWQJwA0k/Q==",
+  "dgSpecHash": "U/n/rpH3o7BAg6/MEh2wJKVdr3MAuRRGetsU5WX5E1dRmeR83Jorqa6gD2x/ENQhGUOzVBbeohqiqqzRUdVURQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Marjun\\source\\repos\\TechnicalExam\\TechnicalExam.Services\\TechnicalExam.Services.csproj",
+  "projectFilePath": "C:\\repos\\TechnicalExam\\TechnicalExam.Services\\TechnicalExam.Services.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Marjun\\.nuget\\packages\\fluentvalidation\\10.1.0\\fluentvalidation.10.1.0.nupkg.sha512",
     "C:\\Users\\Marjun\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
